@@ -1,0 +1,77 @@
+:root{
+  --button-color:#74177c
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #313434 !important;
+}
+.curds .container{
+    margin: 20px auto;
+    color: white;
+}
+.curds .header{
+    text-align: center;
+}
+.curds .input{}
+.curds .input input{
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #10100f;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+.curds .input :is(.title, .count, .category, .create){
+    width: 100%;
+}
+.curds .input :is(.price, .taxes, .ads, .discount){
+    width: 18%;
+}
+.curds .input .title{}
+.curds .input .price{}
+.curds .input .taxes{}
+.curds .input .ads{}
+.curds .input .discount{}
+.curds .input .category{}
+.curds .input .create{
+    background-color: var(--button-color);
+}
+.curds .input .total{
+    background-color: #bf474a;
+    padding: 4px;
+    border-radius: 5px;
+}
+.curds .input .total span{}
+.curds .output{}
+.curds .output input{
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #10100f;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+.curds .output :is(.search-category, .search-title, .delete-all){
+    width: 45%;
+    background-color: var(--button-color);
+}
+.curds .output .search-category{
+    margin-left: 7.2%;
+}
+.curds .output :is(.delete-all, .search){
+    width: 100%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+th, td {
+    padding: 5px;
+    border-top: 2px solid #79798f !important;
+
+  }
