@@ -25,10 +25,10 @@
             </div>
             
             <div class="output">
-                <input type="search" class="search" placeholder="search">
-                <input type="button" class="search-title"value="search by title">
-                <input type="button" class="search-category"value="search by category">
-                <input type="button" class="delete-all"value="delete all">
+                <input type="search" class="search" placeholder="search" onkeyup="searchP(this.value)">
+                <input type="button" class="search-title"value="search by title" onclick="searchMood(this.value)">
+                <input type="button" class="search-category"value="search by category" onclick="searchMood()">
+                <button type="submit" class="delete-all">Delete all: <span></span></button>
                 <table>
                     <tr>
                         <th>ID</th>
@@ -42,18 +42,9 @@
                         <th>Update</th>
                         <th>Delete</th>
                     </tr>
-                    <tr class="">
-                        <td>1</td>
-                        <td>samsung s20</td>
-                        <td>2000</td>
-                        <td>52</td>
-                        <td>125</td>
-                        <td>45</td>
-                        <td>2132</td>
-                        <td>phone</td>
-                        <td>update</td>
-                        <td>delete</td>
-                    </tr>
+                    <tbody class="tbody">
+                      
+                    </tbody>
                 </table>
             </div>
         </div>
